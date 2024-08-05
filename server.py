@@ -15,7 +15,7 @@ def about():
 
 @app.route('/blog')
 def blog():
-    return render_template('blog.html', author = 'Bob')
+    return render_template('blog.html', author = 'Bob', sunny=True)
 
 
 @app.route('/blog/<blog_id>')
